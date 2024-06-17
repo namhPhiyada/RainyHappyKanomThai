@@ -1,4 +1,4 @@
-#from ultralytics import YOLO
+from ultralytics import YOLO
 import cv2
 import streamlit as st
 from PIL import Image
@@ -7,9 +7,9 @@ import numpy as np
 from class_labels_name import class_labels_names
 
 # imgpath = r"C:\Users\LENOVO\Desktop\pro\img\val\1\82.jpg"
-model = torch.hub.load('ultralytics/yolov8', 'custom', path='best.pt')
+model = ROOT/'best.pt'
 # img = cv2.imread(imgpath)
-#model = YOLO(modelpath)
+model = YOLO(modelpath)
 
 st.title("HAPPY RAINNY KANOMTHAI..")
 image = st.file_uploader("Choose .jpg pic ...", type=["png", "jpg", "jpeg"])
