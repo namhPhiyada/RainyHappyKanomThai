@@ -7,7 +7,7 @@ import numpy as np
 from class_labels_name import class_labels_names
 
 # imgpath = r"C:\Users\LENOVO\Desktop\pro\img\val\1\82.jpg"
-model = 'best.pt'
+modelpath = 'best.pt'
 # img = cv2.imread(imgpath)
 model = YOLO(modelpath)
 
