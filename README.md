@@ -1,0 +1,2 @@
+# RainyHappyKanomThai
+classify KanomThai
