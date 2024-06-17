@@ -8,9 +8,9 @@ from class_labels_name import class_labels_names
 import os
 
 # imgpath = r"C:\Users\LENOVO\Desktop\pro\img\val\1\82.jpg"
-modelpath = os.path('best.pt')
+# modelpath = os.path('best.pt')
 # img = cv2.imread(imgpath)
-model = YOLO(modelpath)
+model = YOLO('best.pt')
 
 st.title("HAPPY RAINNY KANOMTHAI..")
 image = st.file_uploader("Choose .jpg pic ...", type=["png", "jpg", "jpeg"])
